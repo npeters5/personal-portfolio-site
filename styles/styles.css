@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+  /*border: 1px solid black;*/
+}
+
+body {
+  margin: 10px;
+  padding: 5px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+section {
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 40px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 14pt;
+  padding-bottom: 30px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-container {
+  width: 100%;
+  display: flex;
+  font-weight: bold;
+  font-size: 10pt;
+  padding: 30px 50px 20px 20px;
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  background-color: white;
+  margin-top: 0;
+  z-index:10;
+}
+
+#home {
+  flex: 1;
+}
+
+#portfolio, #about, #blog {
+  flex: 1;
+  text-align: right;
+  /*padding-right: 10px;*/
+}
+
+header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 15%;
+}
+
+header h1 {
+  font-size: 26pt;
+  margin-top: 25px;
+  text-align: center;
+  animation: fadein 3s;
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+footer {
+  width: 100%;
+  min-height: 30px;
+  margin: 20px auto;
+  padding: 20px 0 40px 20px;
+  text-align: center;
+}
+
+.copyright {
+  padding-top: 10px;
+  font-size: .75em;
+}
+
+.social-container {
+  display: flex;
+  /*padding-left: 50px;
+  padding-right: 50px;*/
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.social-container a {
+  opacity: .5;
+  transition: all .5s;
+  /*flex: -1;*/
+}
+
+a.social:hover {
+  opacity: 1;
+}
+
+footer img {
+  width: 50%;
+}
+
+@media screen and (max-width: 400px) {
+  footer {
+    font-size: 1.3em;
+    max-width: 1200px;
+    margin: 40px auto;
+  }
+
+}

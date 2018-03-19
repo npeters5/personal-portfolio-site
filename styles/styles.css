@@ -54,6 +54,7 @@ header {
   height: 580px;
   color: white;
 }
+
 header h1 {
   background-color: black;
   padding: 10px;
@@ -63,6 +64,21 @@ header h1 {
   line-height: 1.2;
   letter-spacing: .15em;
 }
+
+.portfolio-header {
+  display: flex;
+  margin-top: 100px;
+  flex-direction: row;
+  border-bottom: black;
+  height: 100px;
+}
+
+.portfolio-header h1 {
+  justify-content: space-between;
+  background-color: #A9A9A9;
+  border-left: black;
+}
+
 .intro {
   padding-top: 100px;
   font-size: 1.5em;
@@ -85,6 +101,49 @@ header h1 {
     to {
         opacity:1;
     }
+}
+
+.gallery-container {
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  grid-column: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-auto-rows: max-content;
+  grid-auto-flow: row;
+  grid-column-gap: 10px;
+  grid-row-gap: 20px;
+  align-content: center;
+}
+
+.gallery-item {
+  max-width: 95%;
+  height: auto;
+  padding-bottom: 15px;
+  justify-self: center;
+  align-self: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+img.gallery-item:hover {
+  opacity: 0.8;
+}
+
+.gallery-text {
+  font-size: 10pt;
+  text-align: center;
+}
+
+.gallery-text {
+  text-decoration: none;
+  color: #000;
+}
+
+#chicken {
+  /*grid-column-start: 8;*/
 }
 
 .bgimg-1 {
